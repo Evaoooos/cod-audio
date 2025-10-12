@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ↓ 这里的标题会显示在浏览器标签页上 -->
+    <title>Keegan - Audio Profile</title>
+    <style>
+        /* 引入和ID卡一致的字体，保持风格统一 */
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #121212; /* 深邃的背景色 */
+            color: #E0E0E0; /* 柔和的文字颜色 */
+            font-family: 'IBM Plex Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        /* 角色图片样式 */
+        .character-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 圆形图片 */
+            border: 3px solid #C0C0C0; /* 银色边框 */
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* 角色名称样式 */
+        h1 {
+            color: #C0C0C0; /* 银色 */
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        /* 独白文字样式 */
+        blockquote {
+            font-size: 1em;
+            line-height: 1.8;
+            border-left: 3px solid #555;
+            padding-left: 20px;
+            margin: 0 0 30px 0;
+            font-style: italic;
+            text-align: left;
+        }
+
+        /* 音频播放器样式 */
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            /* 一个小技巧让默认播放器变成浅色，以适应深色背景 */
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ==================== 您需要修改的部分 START ==================== -->
+
+
+        <!-- 2. 修改角色名称 -->
+        <h1>Keegan</h1>
+
+        <!-- 3. 粘贴独白文字稿 -->
+        <blockquote>
+            Name's Keegan. Most of what I do is... waiting. Watching. Learning the rhythm of a place 'til I'm a part of it. Some folks think a sniper's job is just one pull of a trigger. But it's everything before that. The patience. The math. Knowing that one shot, my shot, is the only thing that matters. When you hear that crack in the distance... it's already over.
+
+        <!-- 4. 替换音频文件链接，并添加 autoplay 属性 -->
+        <audio controls autoplay>
+            <source src="keegan.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+
+        <!-- ==================== 您需要修改的部分 END ==================== -->
+    </div>
+</body>
+</html>
